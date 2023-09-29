@@ -16,19 +16,27 @@
 <body>
 
   @@include('parts/header.html')
+  <div class="container">
+  At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.
 
-  <p class="text">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Error nam laudantium repellendus sunt nesciunt 
-     mollitia sint nemo itaque modi reprehenderit?
-  </p>
+    <button class=" button main-button">Buy now</button>
+    <button class="button hero-button">How it's made</button>
+    <button class="button review-button">Leave a review</button>
 
-<picture>
- <source srcset="img/" type="image/webp" alt="fruits">
-  <img class="" src="img/fruits.png" loading="lazy" width="260" height="146" alt="fruits">
-</picture>
+    <h1 class="main-title"><span>Chocolate</span> a delicious cure for a bad day</h1>
+    <h2 class="section-title">how it's <span>made?</span></h2>
+    <h2 class="section-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
+    <img src="img/products-5.png" alt="">
+     <svg class="svg">
+      <use xlink:href="img/svg/sprite.svg#spoon"></use>
+     </svg>
 
+     <svg class="svg">
+      <use xlink:href="img/svg/sprite.svg#twitter"></use>
+     </svg>
+    
 
+  </div>
   @@include('parts/footer.html')
 
 
@@ -37,41 +45,7 @@
   <script src="libs/swiper.js"></script>
   <script src="js/main.min.js"></script>
 
-  <!-- git --version  - checking git version-->
-  <!-- git init - start git-->
-  <!-- git status - shows status of project in git repository -->
-  <!-- git add . - adds folders to the staging area -->
-  <!-- git commit -m "comment"-  adds folders to the repository-->
-  <!-- git log - shows all the commits in the project with its full information -->
-  <!-- git checkout <commit hash> - goes to the one of version in the project -->
-  <!-- git checkout <master> - goes back to the last commit in the project -->
-
-  <!-- git branch <branch name> - creates new branch -->
-  <!-- git checkout <branch name> - goes to the one of branches in the project (main, master...) -->
-  <!-- git checkout -b <branch name> - creating a new branch and moving to it -->
-  <!-- git branch - shows branch list  -->
-  <!-- git branch -m <new branch name> - renaming the current branch -->
-  <!-- git branch -d <branch name> - deleting a branch (except the current branch) -->
-  <!-- git merge <branch name> - branch merging with the current branch -->
-  <!-- git merge -m "message" <branch name> - branch merging with the current branch and with a comment -->
-
-  <!-- cd <folder name> - goes to the pointed folder in the project -->
-  <!-- cd .. returns to the root folder in the project -->
-  <!-- git cat-file -t <hash> - shoes type of the git object -->
-  <!-- git cat-file -p <hash> - shoes content(folders and files) of the git object -->
-  <!-- rm <name of folder or file> - removes folders and files from project -->
-  <!-- mkdir <name of folder> - creates new folder in the project  -->
-  <!-- echo <text> > <name of file> - creates content in the pointed file -->
-  <!-- ls - shows all folders and files in the project  -->
-
-  <!-- origin - a remote repository name -->
-  <!-- git clone <URL> - cloning a remote repository to my computer -->
-  <!-- git branch -a - to see all the branches on the remote repository -->
-  <!-- git pull - download changes from the remote branch to the local branch -->
-  <!-- git push - upload changes from the local branch to the remote branch -->
-  <!-- git remote add origin <URL> - adding a remote repository fron gitHub -->
-  <!-- git push -u origin main - uploading changes from a local branch to a remote branch -->
-
+ 
 </body>
 
 </html>

@@ -16,7 +16,7 @@ const size = require('gulp-size'); // показывает размер файл
 const newer = require('gulp-newer'); // фильтрует файлы чтобы сжимать только новые
 const fileinclude = require('gulp-file-include'); // добавляет части html кода в общий index.html.например header footer
 const webp = require('gulp-webp'); // переводит изображения в формат webp
-const avif = require('gulp-avif');
+// const avif = require('gulp-avif');  // переводит изображения в формат avif (deleted)
 const replace = require('gulp-replace'); // меняет маску @img на 'img/'
 const browserSync = require('browser-sync').create(); // окно в браузере
 const ttf2woff = require('gulp-ttf2woff'); // преобразовывает формат шрифтов
@@ -208,7 +208,8 @@ function copyResourses() {
 function img() {
   return gulp.src(paths.images.src)
     .pipe(newer(paths.images.dest))
-    .pipe(avif())
+    // .pipe(avif())
+    // .pipe(gulp.dest(paths.images.dest))
     .pipe(webp())
     .pipe(gulp.dest(paths.images.dest))
 
