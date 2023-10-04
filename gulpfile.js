@@ -40,7 +40,7 @@ let isProd = false; // dev by default
 // пути от изначальных файлов к файлам назначения
 const paths = {
   html: {
-    src: 'src/*.html',
+    src: 'src/**/*.html',
     dest: 'dist'
   },
   styles: {
@@ -120,7 +120,7 @@ function html() {
     }))
     .pipe(replace(/@img\//g, 'img/'))
     .pipe(htmlmin({
-      collapseWhitespace: true
+      collapseWhitespace: false
     }))
     .pipe(size())
     .pipe(gulp.dest(paths.html.dest))
@@ -287,7 +287,7 @@ function watch() {
 }
 
 
-const build = gulp.series(delDist, gulp.parallel( html, fonts, scripts, libs, img, svgSprites),styles, copyResourses,zipFiles, watch,deploy);
+const build = gulp.series(delDist, gulp.parallel( fonts, scripts, libs, img, svgSprites), html, styles, copyResourses,zipFiles, watch,deploy);
 
 // экспорт задач
 exports.delDist = delDist;
