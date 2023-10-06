@@ -2,7 +2,7 @@
 
 body{
   overflow-x: hidden;
-  font-family: 'Montserrat';
+  font-family: $main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -54,11 +54,11 @@ body{
 }
 
 .main-title {
-  text-align: center;
+  text-align: left;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21; 
-  letter-spacing: -0.56px;
+  letter-spacing: -0.84px;
   color:$color1;
 
   span {
@@ -92,26 +92,17 @@ body{
 
   font-weight: 600;
   line-height: normal;
+ 
   transition: all .3s;
 }
 
 .main-button {
   color:$color1;
+  letter-spacing: .6px;
   background-color: $color4;
 
   &:hover {
     background-color: $color5;
-    color:$color4;
-    transition: all .3s;
-  }
-}
-
-.hero-button {
-  border: 1px solid $color1;
-  color:$color1;
-
-  &:hover {
-    border: 1px solid $color4;
     color:$color4;
     transition: all .3s;
   }
@@ -134,10 +125,42 @@ body{
 
 // media queries
 
-@media (max-width:375px) {
+@media (max-width:768px) {
+  .main-title {
+    font-size: 24px;
+    letter-spacing: -0.6px;
+  
+  }
+}
+@media (max-width:648px) {
+
+  .main-title {
+    font-size: 22px;
+    letter-spacing: -0.6px;
+  }
 
   .button {
     padding: 12px 28px;
+  }
+}
+
+@media (max-width:450px) {
+  .main-title {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+  }
+}
+
+@media (max-width:375px) {
+
+  .main-title {
+    font-size: 18px;
+  
+  }
+
+  .button {
+    padding: 10px 22px;
+    font-size: 12px;
   }
 
   .review-button {
