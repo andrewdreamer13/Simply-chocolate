@@ -63,7 +63,7 @@ const paths = {
   },
 
   images: {
-    src: 'src/img/**/*.{jpg,jpeg,png,gif,ico,webp}',
+    src: 'src/img/**/*.{jpg,jpeg,png,gif,ico,webp,mp4,webm}',
     dest: 'dist/img'
   },
   svgSprites: {
@@ -90,7 +90,7 @@ const paths = {
 
 // задача для удаления папки dist
 function delDist() {
-   return del(['dist/*', '!dist/img']) //'!dist/img'
+   return del(['dist/*', ]) //'!dist/img'
   
 }
 

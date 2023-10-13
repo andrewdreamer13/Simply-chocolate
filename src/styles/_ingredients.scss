@@ -74,12 +74,14 @@
 .ingredients__card-front {
   padding: 28px 28px 28px 28px;
   z-index: 2;
+  
 }
 
 .ingredients__img {
   display: block;
   margin: 0 auto 35px auto;
   margin-bottom: 35px;
+  
 }
 
 .ingredients__name {
@@ -141,6 +143,7 @@
   -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  
 }
 
 @media (max-width:890px) {

@@ -1,0 +1,139 @@
+.manufacturing {
+  width: 100%;
+  padding: 64px 0;
+
+}
+
+.manufacturing__title {
+  margin-bottom: 48px;
+}
+
+.manufacturing__inner {
+  display:grid;
+  grid-template-columns: minmax(400px, 600px) minmax(350px, 516px) ;
+  grid-row: 1;
+  gap:20px ;
+  align-items: center;
+}
+
+.manufacturing__video-box {
+  position: relative;
+  aspect-ratio: 1.5/1;
+}
+
+.manufacturing__video {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
+
+  &[poster] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+}
+
+.manufacturing__play-btn {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+
+ 
+  &:hover svg {
+    fill: $color4;
+  }
+
+  .svg {
+    width: 100%;
+    height: 100%;
+    fill: $color1-light;
+    transition: fill .3s;
+  }
+
+}
+
+.pressed {
+  transform: scale(.9);
+  transition: scale .5s;
+}
+
+
+.manufacturing__recipe {
+  padding: 32px;
+}
+
+.manufacturing__recipe-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.1px;
+  margin-bottom: 28px;
+  max-width:350px ;
+}
+
+.manufacturing__recipe-list {
+ max-width: 425px;
+ padding-left: 15px;
+}
+
+.manufacturing__recipe-item {
+  
+}
+
+.manufacturing__recipe-item:not(:last-child) {
+  margin-bottom:24px ;
+}
+
+
+@media (max-width:1050px) {
+  .manufacturing {
+    padding: 50px 0;
+  }
+
+  .manufacturing__recipe {
+    padding: 22px;
+   
+  }
+  .manufacturing__recipe-item:not(:last-child) {
+    margin-bottom:18px ;
+  }
+  
+}
+
+@media (max-width:900px) {
+  
+  .manufacturing__inner {
+    grid-template-columns: repeat(1, minmax(290px, 600px));
+    justify-content: center;
+  }
+  .manufacturing__recipe {
+    padding: 22px;
+   
+  }
+  
+}
+
+@media (max-width:600px) {
+  .manufacturing {
+    padding: 36px 0;
+  }
+
+  .manufacturing__title {
+    margin-bottom: 32px;
+  }
+
+  .manufacturing__recipe-title {
+    margin-bottom: 20px;
+  }
+}
+
+
