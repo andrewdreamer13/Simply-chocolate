@@ -27,7 +27,8 @@ function videoStatus(){
 playButton.addEventListener('click',videoStatus);
 video.addEventListener('click',videoStatus);
 
-playButton.addEventListener('mousedown', () => {
+playButton.addEventListener('mousedown', (e) => {
+  // e.preventDefault();
   playButton.classList.add('pressed');
 });
 
