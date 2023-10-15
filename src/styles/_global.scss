@@ -53,6 +53,12 @@ body{
   // border:1px solid blue;
 }
 
+.container-right {
+  margin: 0 auto;
+  max-width: 1166px;
+  padding-left: calc( (100% - 1166px) / 2);
+}
+
 .main-title {
   text-align: left;
   font-size: 28px;
@@ -143,7 +149,7 @@ body{
   }
   .section-title {
     font-size: 22px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
 
   .button {
