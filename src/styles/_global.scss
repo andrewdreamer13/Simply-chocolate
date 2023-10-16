@@ -50,7 +50,7 @@ body{
   margin: 0 auto;
   max-width: 1166px;
   padding: 0 15px;
-  // border:1px solid blue;
+  //  border:1px solid blue;
 }
 
 .container-right {
@@ -118,6 +118,7 @@ body{
   border: 1px solid $color4;
   font-size: 18px;
   color:$color2;
+  margin: 0 auto;
 
   &:hover {
     border: 1px solid $color4;
