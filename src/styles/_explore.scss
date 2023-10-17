@@ -1,0 +1,34 @@
+.explore {
+  width: 100%;
+  padding: 72px 0;
+  background-color: $color3;
+  background-image: url('../img/explore-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+
+.explore__title {
+  max-width: 260px;
+  margin-bottom: 24px;
+  color:$color1;
+}
+.explore__text {
+  max-width: 467px;
+  margin:0 auto 24px;
+  color: $color1;
+  text-align: center;
+}
+
+.explore__button {
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+@media (max-width:480px) {
+  .explore {
+    padding: 62px 5px;
+  }
+
+}

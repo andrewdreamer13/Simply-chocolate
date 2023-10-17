@@ -1,6 +1,6 @@
 .testimonials {
   width: 100%;
-  padding: 64px 0;
+  padding: 64px 0 128px 0;
 }
 
 .testimonials__title {
@@ -10,7 +10,7 @@
 .testimonials__slider {
   width: 100%;
   margin-bottom: 50px;
-  padding-bottom: 32px;
+  padding-bottom: 42px;
 }
 
 .swiper-wrapper {
@@ -100,7 +100,7 @@
 
 @media (max-width:1050px) {
   .testimonials {
-    padding: 50px 0;
+    padding: 50px 0 100px 0;
   }
 }
 
@@ -118,7 +118,7 @@
 
 @media (max-width:600px) {
   .testimonials {
-    padding: 36px 0;
+    padding: 36px 0 72px 0;
   }
 
   .testimonials__slider {
