@@ -1,17 +1,19 @@
 .benefits {
   width: 100%;
-  background-color: $color3;
+  // background-color: $color3;
 }
 
 .benefits__inner {
   width: 100%;
   min-height: 344px;
   padding: 50px 18px 50px 18px;
+  border-radius:15px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   gap: 32px;
+  background-color: $color3;
 }
 
 .benefits__item {
