@@ -1,12 +1,23 @@
 .explore {
   width: 100%;
-  padding: 72px 0;
+
+  // background-color: $color3;
+  // background-image: url('../img/explore-bg.jpg');
+  // background-size: cover;
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  
+}
+
+.explore__inner {
+  width: 100%;
+  padding: 72px 15px;
   background-color: $color3;
   background-image: url('../img/explore-bg.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  
+  border-radius:15px;
 }
 
 .explore__title {
@@ -27,8 +38,11 @@
 }
 
 @media (max-width:480px) {
-  .explore {
-    padding: 62px 5px;
+  // .explore {
+  //   padding: 62px 5px;
+  // }
+  .explore__text {
+    text-align: left;
   }
 
 }

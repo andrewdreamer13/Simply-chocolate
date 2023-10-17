@@ -3,13 +3,14 @@
 .hero {
   width: 100%;
   padding: 0 0 72px 0;
+  background-color: $body-bg;
 }
 
 .hero__inner {
   width: 100%;
   min-height: 600px;
   padding: 381px 40px 40px 40px;
-  border-radius: 30px;
+  border-radius: 15px;
 
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
