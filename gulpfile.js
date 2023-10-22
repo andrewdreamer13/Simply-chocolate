@@ -90,7 +90,7 @@ const paths = {
 
 // задача для удаления папки dist
 function delDist() {
-   return del(['dist/*', ]) //'!dist/img'
+   return del(['dist/*','!dist/img' ]) //'!dist/img'
   
 }
 
@@ -131,7 +131,7 @@ function styles() {
   return gulp.src(paths.styles.src)
     .pipe(sourcemaps.init())
     .pipe(scss({
-      outputStyle: 'expanded'
+      outputStyle: 'expanded' // expanded, nested, compacted, and compressed.
     }).on('error', scss.logError))
     .pipe(groupCssMediaQueries())
     .pipe(autoprefixer({
@@ -139,9 +139,9 @@ function styles() {
       overrideBrowserslist: ["last 10 versions"],
       cascade: true
     }))
-    .pipe(cleanCss({
-      level: 2,
-    }))
+    // .pipe(cleanCss({
+    //   level: 2,
+    // }))
     .pipe(rename({
       basename: 'main',
       suffix: '.min'

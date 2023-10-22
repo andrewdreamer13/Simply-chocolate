@@ -140,9 +140,9 @@
 
 .ingredients__card-back-description {
   display: -webkit-box;
-  -webkit-line-clamp: 9;
-  -webkit-box-orient: vertical;
   overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 9;
   
 }
 
