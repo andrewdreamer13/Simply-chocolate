@@ -1,6 +1,7 @@
 /* global styles*/
 
 body{
+  position: relative;
   overflow-x: hidden;
   font-family: $main-font;
   font-style: normal;
@@ -10,11 +11,10 @@ body{
   letter-spacing: -0.28px;
   color: $color2;
   background-color:$body-bg;
-  // background-color: #383434;
 }
 
 :root {
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
   accent-color:$color1-light;
 }
 
@@ -38,14 +38,6 @@ body{
   user-select: none;
   pointer-events: none;
 }
-
-
-// .untranslate {
-//   opacity: 1;
-//   transform: translate(0, 0);
-//    transition: all .5s;
-//  }
-
 
 .container {
   margin: 0 auto;
@@ -75,13 +67,23 @@ body{
 }
 
 .nav__link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
-  transition: color .3s;
-
-  &:hover {
+  transition: all .3s;
+ 
+  
+   &:hover {
     color:$color4;
+    translate: 0 -5px 0;
   }
+
+  &--active {
+    color:$color4;
+    animation: item-scale .8s linear 1 alternate forwards ;
+    
+  }
+
 }
 
 .nav__social {
@@ -112,13 +114,44 @@ body{
   letter-spacing: -0.72px;
   text-transform: uppercase;
 
-  span {
-    color:$color4;
-  }
-
 }
 
+.section-title__span {
+  display: inline-block;
+}
 
+.title-animated {
+ animation: title-scale .8s linear 1 alternate forwards ;
+ color:$color4;
+}
+
+@keyframes item-scale {
+  0% {
+    scale:1;
+  }
+
+  50% {
+    scale:1.2;
+  }
+  
+  100% {
+   scale: 1;
+  }
+}
+
+@keyframes title-scale {
+  0% {
+    scale:1;
+  }
+
+  50% {
+    scale:1.2;
+  }
+  
+  100% {
+   scale: 1;
+  }
+}
 
 .button {
   display: block;

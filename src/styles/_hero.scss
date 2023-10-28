@@ -2,7 +2,7 @@
 
 .hero {
   width: 100%;
-  padding: 0 0 72px 0;
+  padding: 64px 0 72px 0;
   background-color: $body-bg;
 }
 
@@ -117,6 +117,14 @@
   }
 }
 
+@media (max-width:950px) {
+  .hero {
+    width: 100%;
+    padding: 61px 0 72px 0;
+    background-color: $body-bg;
+  }
+}
+
 @media (max-width:768px) {
   .hero__inner {
     padding: 671px 40px 40px 40px;
@@ -131,7 +139,7 @@
 @media (max-width:648px) {
 
   .hero {
-    padding: 0 0 52px 0;
+    padding: 61px 0 52px 0;
   }
 
   .hero__inner {
@@ -178,7 +186,7 @@
 @media (max-width:450px) {
 
   .hero {
-    padding: 0 0 32px 0;
+    padding: 61px 0 32px 0;
   }
 
   .hero__inner {

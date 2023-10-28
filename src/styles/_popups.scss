@@ -72,6 +72,10 @@
   }
 }
 
+.popup__title {
+  display: inline-block;
+}
+
 .popup__form {
   width: 100%;
   background-color: $body-bg;

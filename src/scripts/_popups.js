@@ -13,12 +13,14 @@ function openModalWindows() {
       modalWindow.classList.add('modal-window--visible');
       document.body.classList.add('no-scroll');
       document.querySelector(`[data-target="${path}"]`).classList.add('visible');
+      document.querySelector(`[data-target="${path}"] .popup__title`).classList.add('title-animated');
 
 
       closeButtons.forEach((button) => {
         button.addEventListener('click', () => {
           modalWindow.classList.remove('modal-window--visible');
           document.querySelector(`[data-target="${path}"]`).classList.remove('visible');
+          document.querySelector(`[data-target="${path}"] .popup__title`).classList.remove('title-animated');
           document.body.classList.remove('no-scroll');
         })
       });
@@ -27,6 +29,7 @@ function openModalWindows() {
         if (e.target == modalWindow) {
           modalWindow.classList.remove('modal-window--visible');
           document.querySelector(`[data-target="${path}"]`).classList.remove('visible');
+          document.querySelector(`[data-target="${path}"] .popup__title`).classList.remove('title-animated');
           document.body.classList.remove('no-scroll');
         }
       })

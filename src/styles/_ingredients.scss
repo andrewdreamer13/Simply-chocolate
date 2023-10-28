@@ -46,7 +46,6 @@
 }
 
 .ingredients__card {
-  // width: 270px;
   height: 270px;
   position: relative;
   transform-style: preserve-3d;
@@ -158,17 +157,17 @@
 
 }
 
-@media (max-width:768px) {
-  .ingredients {
-    padding: 100px 0 50px 0;
-  }
+// @media (max-width:768px) {
+//   .ingredients {
+//     padding: 100px 0 50px 0;
+//   }
 
-}
+// }
 
 @media (max-width:600px) {
-  .ingredients {
-    padding: 72px 0 36px 0;
-  }
+  // .ingredients {
+  //   padding: 72px 0 36px 0;
+  // }
   .ingredients__subtitle {
     margin: 0 auto 40px auto;
   }

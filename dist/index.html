@@ -18,7 +18,7 @@
   <div class="container">
     <div class="header__inner">
 
-      <a class="logo" href="#!">
+      <a class="logo" href="#home">
 
         <span class="logo__letter">s</span>
         <span class="logo__letter">i</span>
@@ -47,21 +47,21 @@
 
       <nav class="nav header__nav">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#!">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#!">How it’s made?</a></li>
-          <li class="nav__item"><a class="nav__link" href="#!">Our products</a></li>
-          <li class="nav__item"><a class="nav__link" href="#!">Top sellers</a></li>
-          <li class="nav__item"><a class="nav__link" href="#!">Chocolate is loved</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--active" href="#home" data-pointer="home">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#manufacturing" data-pointer="manufacturing">How it’s made?</a></li>
+          <li class="nav__item"><a class="nav__link" href="#products" data-pointer="products">Our products</a></li>
+          <li class="nav__item"><a class="nav__link" href="#top-sellers" data-pointer="top-sellers">Top sellers</a></li>
+          <li class="nav__item"><a class="nav__link" href="#testimonials" data-pointer="testimonials">Chocolate is loved</a></li>
         </ul>
 
         <div class="nav__social">
 
-          <a class="nav__social-link" href="#!">
+          <a class="nav__social-link" href="https:instagram.com" target="_blank">
             <svg class="svg">
               <use xlink:href="img/svg/sprite.svg#instagram"></use>
             </svg>
           </a>
-          <a class="nav__social-link" href="#!">
+          <a class="nav__social-link" href="https:twitter.com" target="_blank">
             <svg class="svg">
               <use xlink:href="img/svg/sprite.svg#twitter"></use>
             </svg>
@@ -72,12 +72,12 @@
 
       <div class="header__social social">
 
-        <a class="social__link" href="#!">
+        <a class="social__link" href="https:instagram.com" target="_blank">
           <svg class="svg">
             <use xlink:href="img/svg/sprite.svg#instagram"></use>
           </svg>
         </a>
-        <a class="social__link" href="#!">
+        <a class="social__link" href="https:twitter.com" target="_blank">
           <svg class="svg">
             <use xlink:href="img/svg/sprite.svg#twitter"></use>
           </svg>
@@ -96,14 +96,14 @@
     </div>
   </div>
 </header>
-  <section class="hero">
+  <section class="hero target-section" id="home" data-target="home">
 
   <div class="container">
 
     <div class="hero__inner">
 
       <h1 class="hero__title main-title">
-        Treat yourself or&nbsp;a&nbsp;loved one to
+       <span>Treat yourself</span> or&nbsp;a&nbsp;loved one to
         our&nbsp;finest ingredients for a&nbsp;moment
         of&nbsp;pure delight!
       </h1>
@@ -129,6 +129,7 @@
     </div>
 
   </div>
+  <span class="hidden" id="benefits"></span>
 </section>
   <section class="benefits">
   <h2 class="hidden">benefits</h2>
@@ -176,12 +177,11 @@
     </div>
   </div>
 </section>
-  <section class="ingredients">
+  <section class="ingredients" id="ingredients">
   <div class="container">
 
-    <h2 class="section-title ingredients__title">
-      it all adds up to one exceptional <span>taste</span> sensation
-    </h2>
+    <h2 class="section-title ingredients__title">it all adds up to one exceptional <span class="section-title__span" data-id="ingredients">taste</span> sensation</h2>
+
     <p class="ingredients__subtitle">
       At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of
       the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one
@@ -277,9 +277,9 @@
   </div>
 </section>
   
-<section class="manufacturing" id="manufacturing">
+<section class="manufacturing target-section" id="manufacturing" data-target="manufacturing">
   <div class="container">
-    <h2 class="section-title manufacturing__title">how it's <span>made?</span></h2>
+    <h2 class="section-title manufacturing__title">how it's <span class="section-title__span" data-id="manufacturing">made?</span></h2>
     <div class="manufacturing__inner">
       <div class="manufacturing__video-box">
         <video class="manufacturing__video" poster="img/video-cover.webp"> 
@@ -324,9 +324,9 @@
 
 
 
-  <section class="products">
+  <section class="products target-section" id="products" data-target="products">
   <div class="container">
-    <h2 class="section-title products__title">our <span>products</span></h2>
+    <h2 class="section-title products__title">our <span class="section-title__span" data-id="products">products</span></h2>
 
     <div class="swiper products__slider">
       <div class="swiper-wrapper products__slider-wrapper">
@@ -417,37 +417,37 @@
 
   </div>
 </section>
-  <section class="top-sellers">
-  <h2 class="section-title top-sellers__title"><span>top</span> sellers</h2>
+  <section class="top-sellers target-section" id="top-sellers" data-target="top-sellers">
+
   <div class="container">
 
-    
-    
-      <div class="top-sellers__images">
+    <h2 class="section-title top-sellers__title"><span class="section-title__span" data-id="top-sellers">top</span> sellers</h2>
 
-        <div class="top-sellers__images-track">
-          <picture>
-            <source srcset="img/top-1.webp" type="image/webp" alt="Nuts">
-            <img class="top-sellers__img" src="img/top-1.jpg" loading="lazy" width="368" height="464" alt="Nuts">
-          </picture>
-        
+    <div class="top-sellers__images">
 
-        
-          <picture>
-            <source srcset="img/top-2.webp" type="image/webp" alt="Nuts">
-            <img class="top-sellers__img" src="img/top-2.jpg" loading="lazy" width="368" height="464" alt="Milk chocolate">
-          </picture>
-       
+      <div class="top-sellers__images-track">
+        <picture>
+          <source srcset="img/top-1.webp" type="image/webp" alt="Nuts">
+          <img class="top-sellers__img" src="img/top-1.jpg" loading="lazy" width="368" height="464" alt="Nuts">
+        </picture>
 
-        
-          <picture>
-            <source srcset="img/top-3.webp" type="image/webp" alt="Nuts">
-            <img class="top-sellers__img" src="img/top-3.jpg" loading="lazy" width="368" height="464" alt="Dark chocolate">
-          </picture>
-        </div>
 
+
+        <picture>
+          <source srcset="img/top-2.webp" type="image/webp" alt="Nuts">
+          <img class="top-sellers__img" src="img/top-2.jpg" loading="lazy" width="368" height="464" alt="Milk chocolate">
+        </picture>
+
+
+
+        <picture>
+          <source srcset="img/top-3.webp" type="image/webp" alt="Nuts">
+          <img class="top-sellers__img" src="img/top-3.jpg" loading="lazy" width="368" height="464" alt="Dark chocolate">
+        </picture>
       </div>
-   
+
+    </div>
+
 
     <div class="top-sellers__content">
 
@@ -463,9 +463,9 @@
 
   </div>
 </section>
-  <section class="testimonials">
+  <section class="testimonials target-section" id="testimonials" data-target="testimonials">
   <div class="container">
-    <h2 class="section-title testimonials__title"><span>chocolate</span>  is loved</h2>
+    <h2 class="section-title testimonials__title"><span class="section-title__span" data-id="testimonials">chocolate</span>  is loved</h2>
 
     <div class="swiper testimonials__slider">
       <div class="swiper-wrapper testimonials__slider-wrapper">
@@ -570,10 +570,10 @@
     <button class="button review-button" data-path="review">Leave a review</button>
   </div>
 </section>
-  <section class="explore">
+  <section class="explore" id="explore">
   <div class="container">
     <div class="explore__inner">
-      <h2 class="section-title explore__title">explore <span>our new</span> chocolate first</h2>
+      <h2 class="section-title explore__title">explore <span class="section-title__span" data-id="explore">our new</span> chocolate first</h2>
 
       <p class="explore__text">
         From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave
@@ -603,12 +603,12 @@
           </div>
 
           <div class="footer__social social">
-            <a class="social__link" href="#!">
+            <a class="social__link" href="https:instagram.com" target="_blank">
               <svg class="svg">
                 <use xlink:href="img/svg/sprite.svg#instagram"></use>
               </svg>
             </a>
-            <a class="social__link" href="#!">
+            <a class="social__link" href="https:twitter.com" target="_blank">
               <svg class="svg">
                 <use xlink:href="img/svg/sprite.svg#twitter"></use>
               </svg>
@@ -622,11 +622,11 @@
       <div class="footer__bottom">
         <nav class="nav footer__nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#!">Home</a></li>
-            <li class="nav__item"><a class="nav__link" href="#!">How it’s made?</a></li>
-            <li class="nav__item"><a class="nav__link" href="#!">Our products</a></li>
-            <li class="nav__item"><a class="nav__link" href="#!">Top sellers</a></li>
-            <li class="nav__item"><a class="nav__link" href="#!">Chocolate is loved</a></li>
+            <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#manufacturing">How it’s made?</a></li>
+            <li class="nav__item"><a class="nav__link" href="#products">Our products</a></li>
+            <li class="nav__item"><a class="nav__link" href="#top-sellers">Top sellers</a></li>
+            <li class="nav__item"><a class="nav__link" href="#testimonials">Chocolate is loved</a></li>
           </ul>
         </nav>
       </div>
@@ -643,7 +643,7 @@
       <span></span>
     </button>
 
-    <h2 class="section-title order__title"><span>buy</span> now</h2>
+    <h2 class="section-title order__title"><span class="popup__title">buy</span> now</h2>
 
     <div class="order__cards">
 
@@ -729,7 +729,7 @@
       <span></span>
     </button>
 
-    <h2 class="section-title review__title">leave a review about<span> our chocolate</span></h2>
+    <h2 class="section-title review__title">leave a review about<span class="popup__title"> our chocolate</span></h2>
 
     <div class="review__input-box">
       <input class="review__input popup__input" type="text" placeholder="Name">
@@ -778,7 +778,7 @@
         <span></span>
       </button>
 
-      <h2 class="section-title subscribe__title">explore our <span>new&nbsp;chocolate</span> first!</h2>
+      <h2 class="section-title subscribe__title">explore our <span class="popup__title">new&nbsp;chocolate</span> first!</h2>
 
       <form class="subscribe__form" action="#">
         <div class="subscribe__input-box">
