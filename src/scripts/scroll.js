@@ -39,7 +39,6 @@ activateLink();
 
 function activeTitles() {
 
-  const allSections = document.querySelectorAll('section');
   const sectionTitles = document.querySelectorAll('.section-title .section-title__span');
 
   document.addEventListener('scroll', () => {
@@ -63,3 +62,6 @@ function activeTitles() {
   })
 };
 activeTitles();
+
+
+

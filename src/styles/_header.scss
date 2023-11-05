@@ -33,11 +33,9 @@
     rotate: -31deg;
     translate: 0 -100px 0;
     transition: all .3s cubic-bezier(1,.69,1,.8);
-    // transition-delay: 0.9s;
 
     &--animate {
      animation: logo-svg 1s cubic-bezier(1,.69,1,.8) .9s 1 forwards;
-     animation: name duration timing-function delay iteration-count direction fill-mode;
     }
   }
 
@@ -186,7 +184,7 @@
   }
 
   &:hover {
-    translate: 0 -5px 0;
+    translate: 0 -3px 0;
   }
 
   &:hover svg {
@@ -423,3 +421,5 @@
     padding: 136px 0 0 50px;
   }
 }
+
+

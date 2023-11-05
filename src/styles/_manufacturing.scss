@@ -16,13 +16,14 @@
 
 .manufacturing__video-box {
   position: relative;
+  overflow: hidden;
   aspect-ratio: 1.5/1;
+  border-radius: 15px;
 }
 
 .manufacturing__video {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
   object-fit: cover;
   object-position: center;
 
@@ -62,6 +63,187 @@
 .pressed {
   transform: scale(.9);
   transition: scale .5s;
+}
+
+.manufacturing__video-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 10px;
+  background-color: $modal-color;
+  opacity: 0;
+  translate: 0 100% 0;
+  transition: all .3s;
+
+  
+}
+
+.manufacturing__video-controls--visible {
+  opacity: 1;
+  translate: 0 0 0;
+  
+}
+
+.manufacturing__btn-box {
+  max-width:103px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:15px
+}
+
+.manufacturing__stop-btn {
+  width: 44px;
+  height: 44px;
+
+  &:hover svg {
+    fill: $color4;
+  }
+
+  .svg {
+    width: 100%;
+    height: 100%;
+     fill: $color1-light;
+    transition: fill .3s;
+  }
+}
+
+.manufacturing__sound {
+  width: 100%;
+  max-width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  svg {
+    width: 34px;
+    height: 34px;
+     fill: $color1-light;
+  }
+
+}
+
+.manufacturing__sound-progress-box {
+  width: 100%;
+  max-width: 130px;
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+   position: relative;
+}
+.manufacturing__sound-progress {
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $color1-light;
+}
+
+.manufacturing__sound-progress::-webkit-slider-thumb {
+  appearance:none;
+  outline: none;
+  width: 8px;
+  height: 16px;
+  border:none;
+  border-radius:3px;
+  background-color: $color4;
+  cursor:pointer;
+}
+
+.manufacturing__sound-progress::-moz-range-thumb {
+  appearance:none;
+   outline: none;
+  width: 8px;
+  height: 16px;
+  border:none;
+  border-radius:3px;
+  background-color: $color4;
+  cursor:pointer;
+}
+.manufacturing__sound-progress-line {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color:rgba($color4, .6);
+  pointer-events: none;
+}
+
+// video progress
+
+.manufacturing__video-duration {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:5px;
+}
+
+.manufacturing__video-time {
+  width: 60px;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color:  $color1-light;
+}
+
+.manufacturing__video-progress-box {
+  width: 100%;
+  max-width: 130px;
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+   position: relative;
+}
+.manufacturing__video-progress {
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $color1-light;
+ 
+}
+.manufacturing__video-progress-line {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color:rgba($color4, .6);
+  pointer-events: none;
+}
+
+.manufacturing__video-progress::-webkit-slider-thumb {
+  appearance:none;
+  outline: none;
+  width: 8px;
+  height: 16px;
+  border:none;
+  border-radius:3px;
+  background-color: $color4;
+  cursor:pointer;
+}
+
+.manufacturing__video-progress::-moz-range-thumb {
+  appearance:none;
+  outline: none;
+  width: 8px;
+  height: 16px;
+  border:none;
+  border-radius:3px;
+  background-color: $color4;
+  cursor:pointer;
 }
 
 
@@ -128,6 +310,44 @@
   .manufacturing__recipe-title {
     margin-bottom: 20px;
   }
+
+  .manufacturing__play-btn,
+  .manufacturing__stop-btn {
+    width: 40px;
+    height: 40px;
+  }
 }
 
+@media (max-width:480px) {
 
+  .manufacturing__btn-box {
+    gap:10px
+  }
+
+  .manufacturing__play-btn,
+  .manufacturing__stop-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .manufacturing__video-duration {
+    flex-direction: column;
+    align-items: flex-end;
+    translate: 0 -12px 0;
+  }
+
+  .manufacturing__video-time {
+    width: 50px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width:480px) {
+
+  .manufacturing__play-btn,
+  .manufacturing__stop-btn {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -14,8 +14,8 @@ body{
 }
 
 :root {
-   scroll-behavior: smooth;
-  accent-color:$color1-light;
+  scroll-behavior: smooth;
+  // accent-color:$color4;
 }
 
 .none {
@@ -75,7 +75,7 @@ body{
   
    &:hover {
     color:$color4;
-    translate: 0 -5px 0;
+    translate: 0 -3px 0;
   }
 
   &--active {

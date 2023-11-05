@@ -55,13 +55,12 @@
         </ul>
 
         <div class="nav__social">
-
-          <a class="nav__social-link" href="https:instagram.com" target="_blank">
+          <a class="nav__social-link" aria-label="instagram" href="https:instagram.com" target="_blank"> 
             <svg class="svg">
               <use xlink:href="img/svg/sprite.svg#instagram"></use>
             </svg>
           </a>
-          <a class="nav__social-link" href="https:twitter.com" target="_blank">
+          <a class="nav__social-link" aria-label="twitter" href="https:twitter.com" target="_blank">
             <svg class="svg">
               <use xlink:href="img/svg/sprite.svg#twitter"></use>
             </svg>
@@ -72,12 +71,12 @@
 
       <div class="header__social social">
 
-        <a class="social__link" href="https:instagram.com" target="_blank">
+        <a class="social__link" aria-label="instagram" href="https:instagram.com" target="_blank">
           <svg class="svg">
             <use xlink:href="img/svg/sprite.svg#instagram"></use>
           </svg>
         </a>
-        <a class="social__link" href="https:twitter.com" target="_blank">
+        <a class="social__link" aria-label="twitter" href="https:twitter.com" target="_blank">
           <svg class="svg">
             <use xlink:href="img/svg/sprite.svg#twitter"></use>
           </svg>
@@ -85,7 +84,7 @@
 
       </div>
 
-      <button class="burger">
+      <button class="burger" aria-label="menu button">
 
         <span class="burger__span burger__span-one"></span>
         <span class="burger__span burger__span-two"></span>
@@ -188,10 +187,11 @@
       exceptional taste sensation.
     </p>
 
-    <div class="igredients__cards">
+    <div class="ingredients__cards">
 
       <div class="ingredients__card">
         <div class="ingredients__card-front">
+          <button class="ingredients__card-button">read about</button>
           <picture>
             <source srcset="img/ingredients-1.webp" type="image/webp" alt="milk chocolate">
             <img class="ingredients__img" src="img/ingredients.png" loading="lazy" width="206" height="160" alt="milk chocolate">
@@ -200,10 +200,6 @@
         </div>
         <div class="ingredients__card-back">
           <h3 class="ingredients__card-back-title">milk chocolate</h3>
-          <div class="ingredients__link-box">
-            <a class="ingredients__product-link" href="#!">chocolate</a>
-            <a class="ingredients__benefits-link" href="#!">the benefits</a>
-          </div>
           
           <p class="ingredients__card-back-description">
             Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.
@@ -213,6 +209,7 @@
 
       <div class="ingredients__card">
         <div class="ingredients__card-front">
+          <button class="ingredients__card-button">read about</button>
           <picture>
             <source srcset="img/ingredients-2.webp" type="image/webp" alt="milk">
             <img class="ingredients__img" src="img/ingredients-2.png" loading="lazy" width="206" height="160" alt="milk">
@@ -221,10 +218,6 @@
         </div>
         <div class="ingredients__card-back">
           <h3 class="ingredients__card-back-title">milk</h3>
-          <div class="ingredients__link-box">
-            <a class="ingredients__product-link" href="#!">milk</a>
-            <a class="ingredients__benefits-link" href="#!">the benefits</a>
-          </div>
         
           <p class="ingredients__card-back-description">
             Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.
@@ -233,7 +226,9 @@
       </div>
 
       <div class="ingredients__card">
+
         <div class="ingredients__card-front">
+          <button class="ingredients__card-button">read about</button>
           <picture>
             <source srcset="img/ingredients-3.webp" type="image/webp" alt="nuts">
             <img class="ingredients__img" src="img/ingredients-3.png" loading="lazy" width="206" height="160" alt="nuts">
@@ -242,10 +237,6 @@
         </div>
         <div class="ingredients__card-back">
           <h3 class="ingredients__card-back-title">nuts</h3>
-          <div class="ingredients__link-box">
-            <a class="ingredients__product-link" href="#!">nuts</a>
-            <a class="ingredients__benefits-link" href="#!">the benefits</a>
-          </div>
          
           <p class="ingredients__card-back-description">
             Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.
@@ -255,6 +246,8 @@
 
       <div class="ingredients__card">
         <div class="ingredients__card-front">
+          <button class="ingredients__card-button">read about</button>
+
           <picture>
             <source srcset="img/ingredients-4.webp" type="image/webp" alt="chocolate">
             <img class="ingredients__img" src="img/ingredients-4.png" loading="lazy" width="206" height="160" alt="chocolate">
@@ -263,10 +256,6 @@
         </div>
         <div class="ingredients__card-back">
           <h3 class="ingredients__card-back-title">semi-&nbsp;sweet&nbsp;chocolate</h3>
-          <div class="ingredients__link-box">
-            <a class="ingredients__product-link" href="#!">sweet chocolate</a>
-            <a class="ingredients__benefits-link" href="#!">the benefits</a>
-          </div>
          <p class="ingredients__card-back-description">
           Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow. 
           </p>
@@ -276,25 +265,60 @@
     </div>
   </div>
 </section>
-  
-<section class="manufacturing target-section" id="manufacturing" data-target="manufacturing">
+  <section class="manufacturing target-section" id="manufacturing" data-target="manufacturing">
   <div class="container">
     <h2 class="section-title manufacturing__title">how it's <span class="section-title__span" data-id="manufacturing">made?</span></h2>
     <div class="manufacturing__inner">
+
       <div class="manufacturing__video-box">
-        <video class="manufacturing__video" poster="img/video-cover.webp"> 
+
+        <video class="manufacturing__video" poster="img/video-cover.webp">
           <source src="img/video/manufacturing1.mp4" type="video/mp4" alt="manufacturing">
         </video>
-        <button class="manufacturing__play-btn">
+
+        <button class="manufacturing__play-btn" aria-label="video play button">
           <svg class="svg">
-           <use xlink:href="img/svg/sprite.svg#play"></use>
+            <use xlink:href="img/svg/sprite.svg#play"></use>
           </svg>
         </button>
+
+        <div class="manufacturing__video-controls">
+          <div class="manufacturing__btn-box">
+
+            <button class="manufacturing__stop-btn" aria-label="video stop button">
+              <svg class="svg">
+                <use xlink:href="img/svg/sprite.svg#stop"></use>
+              </svg>
+            </button>
+
+          </div>
+          <div class="manufacturing__sound">
+            <svg class="svg">
+              <use xlink:href="img/svg/sprite.svg#sound"></use>
+            </svg>
+
+            <div class="manufacturing__sound-progress-box">
+              <input class="manufacturing__sound-progress" aria-label="sound adjustment" type="range" min="0" max="100" value="0">
+              <div class="manufacturing__sound-progress-line"></div>
+            </div>
+
+          </div>
+
+          <div class="manufacturing__video-duration">
+            <div class="manufacturing__video-time">00:00</div>
+            <div class="manufacturing__video-progress-box">
+              <input class="manufacturing__video-progress" aria-label="video current time" type="range" min="0" max="100" value="0">
+              <div class="manufacturing__video-progress-line"></div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-     
+
       <div class="manufacturing__recipe">
         <h3 class="manufacturing__recipe-title">
-          Try  our chocolates today and discover&nbsp;the perfect balance of flavor
+          Try our chocolates today and discover&nbsp;the perfect balance of flavor
         </h3>
         <ul class="manufacturing__recipe-list">
           <li class="manufacturing__recipe-item">
@@ -304,7 +328,8 @@
             At the same time, prepare a water bath. Melt the butter on it.
           </li>
           <li class="manufacturing__recipe-item">
-            "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass
+            becomes uniform and silky.
           </li>
           <li class="manufacturing__recipe-item">
             Heat the mixture over low heat, letting it barely boil.
@@ -314,16 +339,10 @@
           </li>
         </ul>
       </div>
-        
+
     </div>
   </div>
 </section>
-
-
-
-
-
-
   <section class="products target-section" id="products" data-target="products">
   <div class="container">
     <h2 class="section-title products__title">our <span class="section-title__span" data-id="products">products</span></h2>
@@ -338,7 +357,7 @@
           </picture>
           <h3 class="product__card-title">orange</h3>
           <h4 class="product__card-subtitle">Dark chocolate</h4>
-          <button class="product__card-btn">45 uah</button>
+          <button class="product__card-btn" data-path="order">45 uah</button>
         </div>
 
         <div class="swiper-slide products__card">
@@ -348,7 +367,7 @@
           </picture>
           <h3 class="product__card-title">apple&granberry</h3>
           <h4 class="product__card-subtitle">Milk chocolate</h4>
-          <button class="product__card-btn">50 uah</button>
+          <button class="product__card-btn" data-path="order">50 uah</button>
         </div>
 
         <div class="swiper-slide products__card">
@@ -358,7 +377,7 @@
           </picture>
           <h3 class="product__card-title">lime&see salt</h3>
           <h4 class="product__card-subtitle">dark chocolate</h4>
-          <button class="product__card-btn">66 uah</button>
+          <button class="product__card-btn" data-path="order">66 uah</button>
         </div>
 
         <div class="swiper-slide products__card">
@@ -368,7 +387,7 @@
           </picture>
           <h3 class="product__card-title">pineapple</h3>
           <h4 class="product__card-subtitle">Dark chocolate</h4>
-          <button class="product__card-btn">54 uah</button>
+          <button class="product__card-btn" data-path="order">54 uah</button>
         </div>
 
         <div class="swiper-slide products__card">
@@ -378,7 +397,7 @@
           </picture>
           <h3 class="product__card-title">classic</h3>
           <h4 class="product__card-subtitle">Milk chocolate</h4>
-          <button class="product__card-btn">45 uah</button>
+          <button class="product__card-btn" data-path="order">45 uah</button>
         </div>
 
         <div class="swiper-slide products__card">
@@ -388,7 +407,7 @@
           </picture>
           <h3 class="product__card-title">honey</h3>
           <h4 class="product__card-subtitle">Milk chocolate</h4>
-          <button class="product__card-btn">50 uah</button>
+          <button class="product__card-btn" data-path="order">50 uah</button>
         </div>
 
         <div class="swiper-slide products__card">
@@ -398,7 +417,7 @@
           </picture>
           <h3 class="product__card-title">roasted fruits</h3>
           <h4 class="product__card-subtitle">Dark chocolate</h4>
-          <button class="product__card-btn">66 uah</button>
+          <button class="product__card-btn" data-path="order">66 uah</button>
         </div>
 
         <div class="swiper-slide products__card">
@@ -408,7 +427,7 @@
           </picture>
           <h3 class="product__card-title">classic</h3>
           <h4 class="product__card-subtitle">White chocolate</h4>
-          <button class="product__card-btn">54 uah</button>
+          <button class="product__card-btn" data-path="order">54 uah</button>
         </div>
 
       </div>
@@ -603,12 +622,12 @@
           </div>
 
           <div class="footer__social social">
-            <a class="social__link" href="https:instagram.com" target="_blank">
+            <a class="social__link" aria-label="instagram" href="https:instagram.com" target="_blank">
               <svg class="svg">
                 <use xlink:href="img/svg/sprite.svg#instagram"></use>
               </svg>
             </a>
-            <a class="social__link" href="https:twitter.com" target="_blank">
+            <a class="social__link" aria-label="twitter" href="https:twitter.com" target="_blank">
               <svg class="svg">
                 <use xlink:href="img/svg/sprite.svg#twitter"></use>
               </svg>

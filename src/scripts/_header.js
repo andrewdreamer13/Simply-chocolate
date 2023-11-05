@@ -18,8 +18,6 @@ function logoAnimate() {
 };
 
 
-
-
 // header burger menu
 burger();
 

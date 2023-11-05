@@ -1,11 +1,13 @@
 // modal windows
 openModalWindows();
 
-function openModalWindows() {
+export function openModalWindows() {
 
   const modalWindow = document.querySelector('.modal-window');
   const closeButtons = document.querySelectorAll('.popup__close-btn');
-  const openButtons = document.querySelectorAll('.button[data-path]');
+  const openButtons = document.querySelectorAll('button[data-path]');
+  const openProductButtons = document.querySelectorAll('.product__card-btn ');
+  console.log(openProductButtons)
 
   openButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
