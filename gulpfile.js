@@ -40,7 +40,8 @@ let isProd = false; // dev by default
 // пути от изначальных файлов к файлам назначения
 const paths = {
   html: {
-    src: 'src/**/*.html',
+    // src: 'src/**/*.html',
+    src: 'src/**/index.html',
     dest: 'dist'
   },
   styles: {
@@ -48,8 +49,8 @@ const paths = {
     dest: 'dist/css/'
   },
   scripts: {
-    //src: 'src/scripts/main.js',
-    src: 'src/scripts/**/*.js',
+    src: 'src/scripts/main.js',
+    // src: 'src/scripts/**/*.js',
     dest: 'dist/js/'
   },
   libs: {
@@ -120,7 +121,7 @@ function html() {
     }))
     .pipe(replace(/@img\//g, 'img/'))
     .pipe(htmlmin({
-      collapseWhitespace: false
+      collapseWhitespace: true
     }))
     .pipe(size())
     .pipe(gulp.dest(paths.html.dest))
@@ -139,9 +140,9 @@ function styles() {
       overrideBrowserslist: ["last 10 versions"],
       cascade: true
     }))
-    // .pipe(cleanCss({
-    //   level: 2,
-    // }))
+    .pipe(cleanCss({
+      level: 2,
+    }))
     .pipe(rename({
       basename: 'main',
       suffix: '.min'
