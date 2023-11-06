@@ -9,6 +9,8 @@
 
 .swiper {
   overflow-y: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .product__slider {
@@ -55,6 +57,9 @@
 
 .products__card-img {
   margin-bottom: 8px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1.14/1;
  
 }
 
@@ -119,9 +124,22 @@
   }
 }
 
+@media (max-width:950px) {
+  .products__card {
+    max-width: 300px;
+  }
+}
+
+@media (max-width:715px) {
+  .products__card {
+    max-width: 325px;
+  }
+}
+
 @media (max-width:600px) {
   .products {
     padding: 36px 0 ;
+
   }
 }
 
@@ -131,6 +149,6 @@
     margin-bottom: 32px;
   }
   .products__card {
-    max-width: 335px;
+    max-width: 350px;
   }
 }

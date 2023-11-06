@@ -85,6 +85,7 @@ const paths = {
 
 // задача для загрузки  на git hub pages 
 // comand for creating <gh-pages> branch and <.publish> folder in the project -  gulp deploy
+// then it is needed to deploy on Git Hub from gh-pages branch
  function deploy() {
   return gulp.src(paths.pages.dest)
     .pipe(ghPages());
