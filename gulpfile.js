@@ -35,7 +35,7 @@ const rootFolder = path.basename(path.resolve()); // поиск названия
 
 let isProd = false; // dev by default
 
-//$ npm i init-package-json  - инициализация сборки gulp npm
+//$ npm i - init-package-json  - инициализация сборки gulp npm
 
 // пути от изначальных файлов к файлам назначения
 const paths = {
@@ -45,7 +45,8 @@ const paths = {
     dest: 'dist'
   },
   styles: {
-    src: 'src/styles/**/*.scss',
+    // src: 'src/styles/**/*.scss',
+    src: 'src/styles/style.scss',
     dest: 'dist/css/'
   },
   scripts: {
@@ -82,7 +83,8 @@ const paths = {
 }
 
 
-//задача для загрузки  на git hub pages   gulp deploy
+// задача для загрузки  на git hub pages 
+// comand for creating <gh-pages> branch and <.publish> folder in the project -  gulp deploy
  function deploy() {
   return gulp.src(paths.pages.dest)
     .pipe(ghPages());
