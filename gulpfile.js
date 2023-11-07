@@ -94,7 +94,7 @@ const paths = {
 
 // задача для удаления папки dist
 function delDist() {
-   return del(['dist/*','!dist/img' ]) //'!dist/img'
+   return del(['dist/*', '!dist/img' ]) //'!dist/img'
   
 }
 
