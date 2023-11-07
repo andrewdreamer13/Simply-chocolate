@@ -36,13 +36,13 @@
       </div>
     </div>
 
-    <form class="order__form popup__form" action="#!">
+    <form class="order__form popup__form" action="#">
 
       <div class="order__input-box order__input-dbl-box">
         <h4 class="order__input-title">Personal information</h4>
         <div class="order__input-dbl-box-inner">
-          <input class="order__input popup__input" type="text" placeholder="Name">
-          <input class="order__input popup__input" type="text" placeholder="surname">
+          <input class="order__input popup__input" type="text" name="order-name" placeholder="Name">
+          <input class="order__input popup__input" type="text" name="surname" placeholder="surname">
         </div>
       </div>
 
@@ -61,7 +61,7 @@
               <img class="popup__img popup__img-flag" src="img/flag.png" loading="lazy" width="32" height="24"
                 alt="flag">
             </picture>
-            <span class="popup__number-code">+380</span>
+            <span class="popup__number-code">+38</span>
           </div>
 
           <input class="order__input popup__input" type="tel" placeholder="Phone number">
@@ -87,8 +87,10 @@
     </form>
   </div>
 
-  <div class="popup review" data-target="review">
 
+  <!-- review -->
+
+  <div class="popup review" data-target="review">
 
     <button class="popup__close-btn">
       <span></span>
@@ -97,34 +99,39 @@
 
     <h2 class="section-title review__title">leave a review about<span class="popup__title"> our chocolate</span></h2>
 
-    <div class="review__input-box">
-      <input class="review__input popup__input" type="text" placeholder="Name">
-    </div>
+    <form class="review__form" action="#">
 
-    <div class="review__input-box">
-      <input class="review__input popup__input" type="email" placeholder="Email">
-    </div>
+      <div class="review__input-box">
+        <input class="review__input popup__input" type="text" name="review-name" placeholder="Name">
+      </div>
 
-    <div class="review__input-box">
-      <label class="review__input-box-inner">
+      <div class="review__input-box">
+        <input class="review__input popup__input" type="email" placeholder="Email">
+      </div>
 
-        <div class="review__input-box-clue">
-          <picture>
-            <source srcset="img/flag.webp" type="image/webp" alt="flag">
-            <img class="popup__img popup__img-flag" src="img/flag.png" loading="lazy" width="32" height="24" alt="flag">
-          </picture>
-          <span class="popup__number-code">+380</span>
-        </div>
+      <div class="review__input-box">
+        <label class="review__input-box-inner">
 
-        <input class="review__input popup__input" type="tel" placeholder="Phone number">
-      </label>
-    </div>
+          <div class="review__input-box-clue">
+            <picture>
+              <source srcset="img/flag.webp" type="image/webp" alt="flag">
+              <img class="popup__img popup__img-flag" src="img/flag.png" loading="lazy" width="32" height="24"
+                alt="flag">
+            </picture>
+            <span class="popup__number-code">+38</span>
+          </div>
 
-    <div class="review__input-box review__message-box">
-      <textarea class="review__textarea" name="comment" placeholder="Enter text"></textarea>
-    </div>
+          <input class="review__input popup__input" type="tel" placeholder="Phone number">
+        </label>
+      </div>
 
-    <button class="button main-button" type="submit">Send</button>
+      <div class="review__input-box review__message-box">
+        <textarea class="review__textarea" name="comment" placeholder="Enter text"></textarea>
+      </div>
+
+      <button class="button main-button" type="submit">Send</button>
+
+    </form>
 
   </div>
 
@@ -145,7 +152,8 @@
         <span></span>
       </button>
 
-      <h2 class="section-title subscribe__title">explore our <span class="popup__title">new&nbsp;chocolate</span> first!</h2>
+      <h2 class="section-title subscribe__title">explore our <span class="popup__title">new&nbsp;chocolate</span> first!
+      </h2>
 
       <form class="subscribe__form" action="#">
         <div class="subscribe__input-box">

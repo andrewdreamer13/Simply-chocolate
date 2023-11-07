@@ -11,9 +11,6 @@
   opacity: 0;
   pointer-events: none;
   transition: .3s;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   background: $modal-color;
   overflow-y: auto;
   overflow-x: hidden;
@@ -99,6 +96,10 @@
   padding-right: 60px;
 }
 
+.popup__input[type="text"]{
+  text-transform: capitalize;
+}
+
 .popup__input[type="tel"] {
   
 }
@@ -116,16 +117,12 @@
 }
 
 
-.popup__img {
-}
-
 .popup__img-mastercard {
   position: absolute;
   top: 51px;
   right: 24px;
 }
-.popup__number-code {
-}
+
 
 //order popup
 .order {
@@ -185,10 +182,6 @@
   align-items: center;
   justify-content: center;
   gap:21px;
-
-  input {
-   text-transform: capitalize;
-  }
 }
 
 .order__input-box-inner,
@@ -221,10 +214,6 @@
 .review__input[type="tel"] {
  flex-grow: 1;
  border: none;
-}
-
-
-.order__message-box {
 }
 
 .order__textarea,
