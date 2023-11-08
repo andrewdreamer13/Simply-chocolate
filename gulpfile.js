@@ -94,7 +94,7 @@ const paths = {
 
 // задача для удаления папки dist
 function delDist() {
-   return del(['dist/*', '!dist/img' ]) //'!dist/img'
+   return del(['dist/*' ]) //'!dist/img'
   
 }
 
@@ -130,6 +130,7 @@ function html() {
     .pipe(gulp.dest(paths.html.dest))
     .pipe(browserSync.stream())
 }
+
 // задача для работы со стилями
 function styles() {
   return gulp.src(paths.styles.src)
